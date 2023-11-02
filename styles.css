@@ -1,0 +1,77 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #002366;
+    color: #ffffff; 
+    font-size: 18px;
+}
+
+#countdown, #current-time, #goal {
+    margin-bottom: 20px;
+}
+
+#countdown {
+    font-size: 36px; 
+    font-weight: 700; 
+}
+
+#current-time {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#goal {
+    cursor: text;
+    width: 80%; 
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #004080; 
+    color: #ffffff;
+    font-size: 24px; 
+    font-weight: 400; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+#goal:empty::before {
+    content: 'Click here to set your goal for today';
+    color: #bbbbbb;
+    font-style: italic; 
+}
+
+#checkGoal {
+    padding: 15px 30px;
+    background-color: #ffffff; 
+    color: #002366; 
+    border: 2px solid #ffffff; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none;
+    margin-top: 20px;
+}
+
+#checkGoal:hover {
+    background-color: #e0e1e2; 
+    color: #002366; 
+}
+
+#confetti-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
